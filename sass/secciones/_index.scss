@@ -1,0 +1,50 @@
+@import "../parciales/mediaQueries";
+/*INDEX*/
+.banner{
+    background-image: url(../imagenes/gato.png);
+    height: 70vh;
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--presentacion{
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        @include movil{
+        font-size: 1.9rem;
+        }
+    }
+}
+
+.videosIndex{
+    font-family: 'Lato', sans-serif;
+    &--titulo{
+        margin-top: 10px;
+        font-size: 2rem;
+        text-align: center;
+    }
+    &__articulo{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        &--iframe{
+            margin-right: 20px;
+            @include movil{
+                margin: 10px 0px 10px 0px;
+            }
+            @include pc{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    &--texto{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+}

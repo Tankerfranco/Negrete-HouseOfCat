@@ -1,0 +1,85 @@
+@import "../parciales/mediaQueries";
+/*Multimedia*/
+
+#tituloMultimedia {
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.gridMain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+    grid-auto-rows: minmax(260px, auto);
+    gap: 50px;
+    padding: 20px;
+    margin-top: 100px;
+    justify-content: center;
+    &--gridImagen{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    &--itemUno{
+        background-image: url(../imagenes/gatoUno.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemDos{
+        background-image: url(../imagenes/gatoDos.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemTres{
+        background-image: url(../imagenes/gatoTres.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemCuatro{
+        background-image: url(../imagenes/gatoCuatro.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemCinco{
+        background-image: url(../imagenes/gatoCinco.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemSeis{
+        background-image: url(../imagenes/gatoSeis.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemSiete{
+        background-image: url(../imagenes/gatoSiete.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    &--itemOcho{
+        background-image: url(../imagenes/gatoOcho.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    &--iframe {
+        margin-bottom: 10px;
+        @include pc{
+            margin: 10px;
+        }
+    }
+}

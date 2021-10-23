@@ -1,0 +1,28 @@
+@import "../parciales/mediaQueries";
+/*Contacto*/
+
+/*Main*/
+.recipiente{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__titulo{
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+    &__imagen{
+        width: 200px;
+    }
+    &__texto{
+        padding-bottom: 20px;
+        font-size: 2rem;
+        text-align: center;
+        @include movil {
+            font-size: 1.5rem;
+        }
+    }
+}

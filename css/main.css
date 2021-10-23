@@ -1,0 +1,531 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+}
+
+/*Grid y estilos de las secciones*/
+.contenedor {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "header header" auto "main main" 1fr "sec sec" auto "footer footer" 100px / auto 1fr;
+}
+
+.contenedor .header {
+  grid-area: header;
+}
+
+.contenedor .main {
+  grid-area: main;
+  background: #FFE7FF;
+}
+
+.contenedor .sec {
+  grid-area: sec;
+  background: #FFE7FF;
+}
+
+.contenedor .footer {
+  grid-area: footer;
+}
+
+/*Nav estilos*/
+.nav {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f5b1ff), color-stop(#fdaeef), color-stop(#ffade0), color-stop(#ffacd2), color-stop(#ffadc6), color-stop(#ffafbb), color-stop(#ffb1b1), color-stop(#ffb5a8), color-stop(#ffbb9b), color-stop(#ffc38c), color-stop(#ffcf7e), to(#ffdc73));
+  background-image: linear-gradient(to right bottom, #f5b1ff, #fdaeef, #ffade0, #ffacd2, #ffadc6, #ffafbb, #ffb1b1, #ffb5a8, #ffbb9b, #ffc38c, #ffcf7e, #ffdc73);
+}
+
+li a:hover {
+  -webkit-transition: 1seg;
+  transition: 1seg;
+  font-size: 2.3rem;
+}
+
+@media screen and (max-width: 425px) {
+  li a:hover {
+    font-size: 2rem;
+  }
+}
+
+/*Footer estilos*/
+.footer {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#f5b1ff), color-stop(#fdaeef), color-stop(#ffade0), color-stop(#ffacd2), color-stop(#ffadc6), color-stop(#ffafbb), color-stop(#ffb1b1), color-stop(#ffb5a8), color-stop(#ffbb9b), color-stop(#ffc38c), color-stop(#ffcf7e), to(#ffdc73));
+  background-image: linear-gradient(to right bottom, #f5b1ff, #fdaeef, #ffade0, #ffacd2, #ffadc6, #ffafbb, #ffb1b1, #ffb5a8, #ffbb9b, #ffc38c, #ffcf7e, #ffdc73);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer__redesSociales {
+  margin: auto;
+  text-align: center;
+}
+
+.footer__redesSociales--facebook {
+  color: #000;
+}
+
+.footer__redesSociales--twitter {
+  color: #000;
+}
+
+.footer__redesSociales--instagram {
+  color: #000;
+}
+
+.footer a i:hover {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+@media screen and (max-width: 425px) {
+  .footer a i:hover {
+    -webkit-transform: rotate(35deg);
+            transform: rotate(35deg);
+  }
+}
+
+/*INDEX*/
+.banner {
+  background-image: url(../imagenes/gato.png);
+  height: 70vh;
+  background-size: cover;
+  background-position: center top;
+  overflow: hidden;
+  position: relative;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner--presentacion {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .banner--presentacion {
+    font-size: 1.9rem;
+  }
+}
+
+.videosIndex {
+  font-family: 'Lato', sans-serif;
+}
+
+.videosIndex--titulo {
+  margin-top: 10px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.videosIndex__articulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.videosIndex__articulo--iframe {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 425px) {
+  .videosIndex__articulo--iframe {
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .videosIndex__articulo--iframe {
+    margin-bottom: 10px;
+  }
+}
+
+.videosIndex--texto {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/*Razas*/
+/*Main*/
+#tituloRazas {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.cont {
+  width: 100%;
+  height: calc(100vh - auto - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.cont__cartaRaza {
+  width: 330px;
+  height: 600px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.cont__cartaRaza--imagen {
+  width: 330px;
+  height: 220px;
+}
+
+.cont__cartaRaza--raza {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.cont__cartaRaza--texto {
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.cont__cartaRaza--texto {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4054c5;
+}
+
+.cont__cartaRaza--link {
+  color: black;
+  text-decoration: none;
+}
+
+.cont__cartaRaza:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Cuidados*/
+/*Main*/
+#tituloCuidado {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.cont {
+  width: 100%;
+  height: calc(100vh - auto - 100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 60px;
+}
+
+.cont__carta {
+  width: 330px;
+  height: 600px;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+}
+
+.cont__carta--imagen {
+  width: 330px;
+  height: 220px;
+}
+
+.cont__carta--cuidado {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.cont__carta--texto {
+  padding: 0 1rem;
+  font-size: 1.7rem;
+  font-weight: 200;
+}
+
+.cont__carta--texto {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #4054c5;
+}
+
+.cont__carta--link {
+  color: black;
+  text-decoration: none;
+}
+
+.cont__carta:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+/*Multimedia*/
+#tituloMultimedia {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.gridMain {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(310px, auto))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+  grid-auto-rows: minmax(260px, auto);
+  gap: 50px;
+  padding: 20px;
+  margin-top: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gridMain--gridImagen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gridMain--itemUno {
+  background-image: url(../imagenes/gatoUno.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemDos {
+  background-image: url(../imagenes/gatoDos.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemTres {
+  background-image: url(../imagenes/gatoTres.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemCuatro {
+  background-image: url(../imagenes/gatoCuatro.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemCinco {
+  background-image: url(../imagenes/gatoCinco.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemSeis {
+  background-image: url(../imagenes/gatoSeis.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemSiete {
+  background-image: url(../imagenes/gatoSiete.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.gridMain--itemOcho {
+  background-image: url(../imagenes/gatoOcho.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.video--iframe {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1440px) {
+  .video--iframe {
+    margin: 10px;
+  }
+}
+
+/*Contacto*/
+/*Main*/
+.recipiente {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recipiente__titulo {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.recipiente__imagen {
+  width: 200px;
+}
+
+.recipiente__texto {
+  padding-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .recipiente__texto {
+    font-size: 1.5rem;
+  }
+}
+
+/*Gracias Estilos*/
+.tacho {
+  background: #FFE7FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tacho__texto {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.tacho__boton {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+}
+
+/*Error404*/
+.fondo {
+  background: #FFE7FF;
+}
+
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contenido__titulo {
+  font-size: 2rem;
+}
+
+.contenido__texto {
+  font-size: 1.3rem;
+}
+
+.contenido--link {
+  text-decoration: none;
+  color: black;
+}

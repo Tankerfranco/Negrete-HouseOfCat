@@ -1,0 +1,25 @@
+/*Footer estilos*/
+.footer{
+    background-image: linear-gradient(to right bottom, #f5b1ff, #fdaeef, #ffade0, #ffacd2, #ffadc6, #ffafbb, #ffb1b1, #ffb5a8, #ffbb9b, #ffc38c, #ffcf7e, #ffdc73);
+    display: flex;
+    justify-content: center;
+    &__redesSociales{
+        margin: auto;
+        text-align: center;
+        &--facebook{
+            color: #000;
+        }
+        &--twitter{
+            color: #000;           
+        }
+        &--instagram{
+            color: #000;
+        }
+    }
+    a i:hover {
+        transform: rotate(45deg);
+        @include movil {
+            transform: rotate(35deg);
+        }
+    }
+}
