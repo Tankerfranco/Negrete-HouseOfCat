@@ -64,9 +64,6 @@ li a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .footer__redesSociales {
@@ -89,13 +86,6 @@ li a:hover {
 .footer a i:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-}
-
-@media screen and (max-width: 425px) {
-  .footer a i:hover {
-    -webkit-transform: rotate(35deg);
-            transform: rotate(35deg);
-  }
 }
 
 /*INDEX*/
@@ -221,15 +211,10 @@ li a:hover {
 }
 
 .cont__cartaRaza--texto {
-  padding: 0 1rem;
-  font-size: 1.7rem;
   font-weight: 200;
-}
-
-.cont__cartaRaza--texto {
   font-size: 1.2rem;
   text-decoration: none;
-  color: #4054c5;
+  color: #0d2fec;
 }
 
 .cont__cartaRaza--link {
@@ -291,15 +276,16 @@ li a:hover {
 }
 
 .cont__carta--texto {
-  padding: 0 1rem;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
+  text-decoration: none;
+  color: #0d2fec;
   font-weight: 200;
 }
 
-.cont__carta--texto {
-  font-size: 1.2rem;
-  text-decoration: none;
-  color: #4054c5;
+@media screen and (max-width: 425px) {
+  .cont__carta--texto {
+    font-size: 1.2rem;
+  }
 }
 
 .cont__carta--link {
