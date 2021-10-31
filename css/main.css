@@ -30,11 +30,6 @@ body {
   background: #FFE7FF;
 }
 
-.contenedor .sec {
-  grid-area: sec;
-  background: #FFE7FF;
-}
-
 .contenedor .footer {
   grid-area: footer;
 }
@@ -43,6 +38,8 @@ body {
 .nav {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#f5b1ff), color-stop(#fdaeef), color-stop(#ffade0), color-stop(#ffacd2), color-stop(#ffadc6), color-stop(#ffafbb), color-stop(#ffb1b1), color-stop(#ffb5a8), color-stop(#ffbb9b), color-stop(#ffc38c), color-stop(#ffcf7e), to(#ffdc73));
   background-image: linear-gradient(to right bottom, #f5b1ff, #fdaeef, #ffade0, #ffacd2, #ffadc6, #ffafbb, #ffb1b1, #ffb5a8, #ffbb9b, #ffc38c, #ffcf7e, #ffdc73);
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 li a:hover {
@@ -168,9 +165,31 @@ li a:hover {
 /*Main*/
 #tituloRazas {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin-top: 20px;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@-webkit-keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cont {
@@ -233,9 +252,22 @@ li a:hover {
 /*Main*/
 #tituloCuidado {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin-top: 20px;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .cont {
@@ -303,9 +335,22 @@ li a:hover {
 /*Multimedia*/
 #tituloMultimedia {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin-top: 20px;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .gridMain {
@@ -343,11 +388,25 @@ li a:hover {
   background-repeat: no-repeat;
 }
 
+.gridMain--itemUno:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
 .gridMain--itemDos {
   background-image: url(../imagenes/gatoDos.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.gridMain--itemDos:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .gridMain--itemTres {
@@ -357,11 +416,25 @@ li a:hover {
   background-repeat: no-repeat;
 }
 
+.gridMain--itemTres:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
 .gridMain--itemCuatro {
   background-image: url(../imagenes/gatoCuatro.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.gridMain--itemCuatro:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .gridMain--itemCinco {
@@ -371,11 +444,25 @@ li a:hover {
   background-repeat: no-repeat;
 }
 
+.gridMain--itemCinco:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
 .gridMain--itemSeis {
   background-image: url(../imagenes/gatoSeis.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.gridMain--itemSeis:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .gridMain--itemSiete {
@@ -385,11 +472,25 @@ li a:hover {
   background-repeat: no-repeat;
 }
 
+.gridMain--itemSiete:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
 .gridMain--itemOcho {
   background-image: url(../imagenes/gatoOcho.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.gridMain--itemOcho:hover {
+  -webkit-transform: translateY(-15px);
+          transform: translateY(-15px);
+  -webkit-box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
 
 .video {
@@ -435,9 +536,28 @@ li a:hover {
 
 .recipiente__titulo {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: uppercase;
   margin-top: 20px;
+  -webkit-animation-duration: 1.6s;
+          animation-duration: 1.6s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .recipiente__titulo {
+    font-size: 1.9rem;
+  }
 }
 
 .recipiente__imagen {
