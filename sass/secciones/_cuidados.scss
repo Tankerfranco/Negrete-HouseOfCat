@@ -1,5 +1,5 @@
+@import "../parciales/tipografia";
 /*Cuidados*/
-
 /*Main*/
 
 #tituloCuidado {
@@ -47,7 +47,7 @@
             font-size: 1.3rem;
             text-decoration: none;
             color: black;
-            font-weight: 200;
+            font-weight: 300;
             @include movil{
                 font-size: 1.2rem;
             }

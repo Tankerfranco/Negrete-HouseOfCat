@@ -232,7 +232,7 @@ li a:hover {
 }
 
 .cont__cartaRaza--texto {
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.2rem;
   text-decoration: none;
   color: black;
@@ -313,7 +313,7 @@ li a:hover {
   font-size: 1.3rem;
   text-decoration: none;
   color: black;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 @media screen and (max-width: 425px) {
