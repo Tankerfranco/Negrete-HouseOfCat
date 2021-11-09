@@ -19,7 +19,7 @@ body {
 .contenedor {
   display: -ms-grid;
   display: grid;
-  grid-template: "header header" auto "main main" 1fr "sec sec" auto "footer footer" 100px / auto 1fr;
+  grid-template: "header header" auto "main main" 1fr "footer footer" 100px / auto 1fr;
 }
 
 .contenedor .header {
