@@ -86,7 +86,8 @@ li a:hover {
           transform: rotate(45deg);
 }
 
-/*INDEX*/
+/*Index*/
+/*Main*/
 .banner {
   background-image: url(../imagenes/gato.png);
   height: 70vh;
@@ -234,7 +235,7 @@ li a:hover {
   font-weight: 200;
   font-size: 1.2rem;
   text-decoration: none;
-  color: #0d2fec;
+  color: black;
 }
 
 .cont__cartaRaza--link {
@@ -311,7 +312,7 @@ li a:hover {
 .cont__carta--texto {
   font-size: 1.3rem;
   text-decoration: none;
-  color: #0d2fec;
+  color: black;
   font-weight: 200;
 }
 
@@ -334,6 +335,7 @@ li a:hover {
 }
 
 /*Multimedia*/
+/*Main*/
 #tituloMultimedia {
   text-align: center;
   font-size: 3rem;
